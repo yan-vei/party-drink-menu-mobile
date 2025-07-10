@@ -9,7 +9,7 @@ const Index = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
 
-  const allTags = ['sour', 'boozy', 'non-boozy', 'sweet', 'medium'];
+  const allTags = ['sour', 'boozy', 'non-boozy', 'sweet', 'medium', 'non-alcoholic', 'mystery'];
 
   const filteredDrinks = drinks.filter(drink => {
     const matchesSearch = drink.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -36,8 +36,9 @@ const Index = () => {
       {/* Header */}
       <div className="bg-gradient-to-r from-orange-500 to-amber-500 text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-2">🍹 Party Drinks Menu</h1>
-          <p className="text-orange-100 text-lg">Choose your perfect drink for tonight!</p>
+          <h1 className="text-4xl font-bold mb-2">🍹 Your Perfect Drinks Menu</h1>
+          <p className="text orange-100 text-lg">Order your drink of choice <a href="https://forms.gle/mJZ3vk1oEdGPV7iVA">***here***</a></p>
+          <p className="text-orange-100 text-lg">After tasting a drink, please rate it <a href="https://forms.gle/LEto6My7ftX5CqjXA">***here***</a></p>
         </div>
       </div>
 

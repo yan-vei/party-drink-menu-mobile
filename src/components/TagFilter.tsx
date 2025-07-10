@@ -13,6 +13,8 @@ const TagFilter = ({ tags, selectedTags, onTagToggle }: TagFilterProps) => {
       'sweet': isSelected ? 'bg-pink-500 text-white border-pink-500' : 'bg-pink-50 text-pink-600 border-pink-200 hover:bg-pink-100',
       'sour': isSelected ? 'bg-yellow-500 text-white border-yellow-500' : 'bg-yellow-50 text-yellow-600 border-yellow-200 hover:bg-yellow-100',
       'medium': isSelected ? 'bg-blue-500 text-white border-blue-500' : 'bg-blue-50 text-blue-600 border-blue-200 hover:bg-blue-100',
+      'non-alcoholic': isSelected ? 'bg-orange-500 text-white border-orange-500' : 'bg-orange-50 text-orange-600 border-orange-200 hover:bg-orange-100',
+      'mystery': isSelected ? 'bg-purple-500 text-white border-purple-500' : 'bg-purple-50 text-purple-600 border-purple-200 hover:bg-purple-100',
     };
     
     return baseColors[tag as keyof typeof baseColors] || 
