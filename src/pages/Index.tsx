@@ -9,7 +9,7 @@ const Index = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
 
-  const allTags = ['sour', 'boozy', 'non-boozy', 'sweet', 'medium', 'non-alcoholic', 'mystery'];
+  const allTags = ['sour', 'boozy', 'non-boozy', 'sweet', 'medium', 'non-alcoholic'];
 
   const filteredDrinks = drinks.filter(drink => {
     const matchesSearch = drink.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
